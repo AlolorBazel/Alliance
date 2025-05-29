@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #007acc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-container a {
+    background-color: white;
+    color: #007acc;
+    border: 2px solid #007acc;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-container a:hover {
+    background-color: #007acc;
+    color: white;
+  }
+  
+  .button-container a:active {
+    transform: scale(0.95);
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #007acc;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #eef;
+  }
+  
+  caption {
+    caption-side: top;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+    }
+  
+    td {
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td::before {
+      position: absolute;
+      left: 16px;
+      top: 12px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+  .box-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 170px); /* match box width */
+    grid-template-rows: repeat(4, 170px);    /* match box height */
+    gap: 20px; /* slightly increased spacing for better breathing room */
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .box {
+    width: 170px;
+    height: 170px;
+    background-color: #007acc;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: 2px solid #005b99;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .wrapper {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .last-frecno,
+  .frecno-holder,
+  .display-generated {
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+  }
+  
+  .last-frecno:focus,
+  .frecno-holder:focus,
+  .display-generated:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  .generate-button,
+  .copy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .generate-button:hover,
+  .copy-button:hover {
+    background-color: #005fa3;
+  }
+  
+  .generate-button:active,
+  .copy-button:active {
+    transform: scale(0.97);
+  }
+  
+  .display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
